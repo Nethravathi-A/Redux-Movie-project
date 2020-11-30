@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./flex.css" />
+  </head>
+​
+  <body>
+    <p id="demo">JS</p>
+    <p class="title">javascript</p>
+    <div class="first-div" id="firstDiv">first element</div>
+    <div class="first-div" id="first">first</div>
+    <p class="first-child">paragraph</p>
+    <span>-----------------------------------------------</span>
+    <div class="parent-div" id="parent">
+      <p class="first-child">fisrt child</p>
+      <p class="second-child">second child</p>
+    </div>
+    <span>-----------------------------------------------</span>
+    <div class="anchor-parent">
+      <a name="one">one</a><br />
+      <a name="two">two</a><br />
+      <a name="three" href="stack">three</a><br />
+    </div>
+    <span>-----------------------------------------------</span>
+    <div class="dynamic-content"></div>
+    <button class="add-list" onclick="handleButtonClick(event)">
+      Add List
+    </button>
+    <ul class="dynamic-list"></ul>
+    <script src="./domManipulation.js"></script>
+  </body>
+</html>

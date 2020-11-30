@@ -1,0 +1,30 @@
+.show-msg{
+    width: 100px;
+    padding: 5px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    margin: 0 auto;
+}
+
+
+#main_div{
+    height: 100px;
+    width: 500px;
+    background-color: lavenderblush;
+    border: 2px solid black;
+}
+
+#child{
+    height: 50%;
+    width: 75%;
+    background-color :rgb(235, 221, 221);
+    border: 2px solid black;
+    margin: 10px auto;
+}
+
+.remove-btn{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+

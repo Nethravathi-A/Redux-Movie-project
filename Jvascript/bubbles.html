@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Event Capturing</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  </head>
+  <body>
+    <div id="parent">
+      Parent
+      <div id="child">Child</div>
+    </div>
+​
+    <script>
+      var parentRef = document.querySelector('#parent');
+​
+      var childRef = document.querySelector('#child');
+​
+      parentRef.addEventListener(
+        'click',
+        function () {
+          console.log('Parent clicked', event);
+          parentRef.setAttribute('style', 'color: white; background: blue');
+        },
+        true
+      );
+​
+      childRef.addEventListener('click', function (event) {
+        console.log('Child clicked', event);
+        childRef.setAttribute('style', 'color: white; background: black');
+      });
+    </script>
+  </body>
+</html>
+​
+<!-- 
+parentRef.addEventListener('click', function () {
+  console.log('Parent clicked', event);
+  parentRef.setAttribute('style', 'color: white; background: blue');
+});
+​
+childRef.addEventListener('click', function (event) {
+  console.log('Child clicked', event);
+  childRef.setAttribute('style', 'color: white; background: black');
+}); -->
